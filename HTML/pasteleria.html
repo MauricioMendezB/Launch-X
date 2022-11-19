@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pasteleria "El jefe"</title>
+</head>
+<body>
+    <main class="main">
+        <section class="contenedor-1">
+            <header class="cabecera">
+                <div class="logo">
+                    <img src="img/logo_small.png" alt="Logo 
+                    El Jefe web">
+                </div>     
+            <nav class="navegacion">
+                <a href="#inicio" class="link">Inicio</a>
+                <a href="#Pasteles" class="link">¡Personaliza tu pastel!</a>
+                <a href="#Contacto" class="link">Contacto</a>
+                <a href="Admin.html" class="link">Administrador</a>
+            </nav>
+            <section id="inicio"></section>
+        </header>
+
+        <div class="banner">
+            <div class="banner___textos">
+                <h1>Pasteleria "El Jefe"</h1>
+                <p>Somos un negocio en especialización de postres y pasteles</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor-2">
+            <section id="Pasteles"></section>
+            <div class="text">
+                <h2 class="contenedor-2__titulo">Nuestros sabores</h2>
+                <p>Pastelería "El Jefe" es un negocio con una trayectoria con más de 30 años en el negocio de los pasteles y postres, galardonado con 3 estrellas Michelin. En nuestra pastelería la opinión y comodidad de nuestro cliente es primero y siempre vemos por la mejor calidad de nuestros alimentos. 
+                    
+                </p>
+            </div>
+            
+
+            <div class="Personaliza pastel">
+                <section class="contenido">
+                    <div class="mostrador" id="mostrador">
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/Chocolate.jpg" alt="">
+                                </div>
+                                <p class="descripcion">Pastel de Chocolate</p>
+                                <span class="precio">$100.00</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/fresa.jpg" alt="">
+                                </div>
+                                <p class="descripcion" id>Pastel de fresa </p>
+                                <span class="precio">$130.00</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/coco.jpg" alt="">
+                                </div>
+                                <p class="descripcion">Pastel de coco</p>
+                                <span class="precio">$120.00</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/vainilla.jpg" alt="">
+                                </div>
+                                <p class="descripcion">Pastel de vainilla</p>
+                                <span class="precio">$125.00</span>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="img/helado.jpg" alt="">
+                                </div>
+                                <p class="descripcion">Pastel de helado</p>
+                                <span class="precio">$145.00</span>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                    <div class="seleccion" id="seleccion">
+                        <div class="cerrar" onclick="cerrar()">
+                            &#x2715
+                        </div>
+                        <div class="info">
+                            <img src="img/1.png" alt="" id="img">
+                            <h2 id="modelo">Pastel</h2>
+                            <p id="descripcion">Rico pastel de chocolate con cerezas y nuez</p>
+            
+                            <span class="precio" id="precio">$130</span>
+            
+                            <div class="fila">
+                                <div class="size">
+                                    <label for="">¿Cuántos?</label>
+                                    <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                    <p></p>
+                                <a href="#adornos" id="agregar">AGREGAR AL CARRITO</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                <script src="script.js"></script>
+        </section>
+
+        <section class="contenedor-3">
+            <h2 class="contenedor-3__titulo">ADORNOS</h2>
+            <div class="contenedor-3__paquete">
+                <section id="adornos"></section>
+                <div class="paquete">
+                    <h3>HELADO</h3>
+                    <img src="img/helado adorno.jpg" alt="Imagen de decoracion helado" width="100%">
+                    <h4>$ 50.00</h4>
+                    <p>El toque ideal</p>
+                    <a href="#contenedor-4">AÑADIR</a>
+                </div>
+
+                <div class="paquete">
+                    <h3>COBERTURAS</h3>
+                    <img src="img/coberturas.jpg" alt="Imagen de decoracion coberturas" width="100%">
+                    <h4>$ 30.00</h4>
+                    <p>Coberturas de tu elección</p>
+                    <a href="#contenedor-4">AÑADIR</a>
+                </div>
+
+                <div class="paquete">
+                    <h3>FRUTAS</h3>
+                    <img src="img/pastel frutas.jpg" alt="Imagen de decoracion frutas" width="100%">
+                    <h4>$ 40.00</h4>
+                    <p>Para la dieta</p>
+                    <a href="#contenedor-4">AÑADIR</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contenedor-4">
+            <div class="content">
+                <section id="Contacto"></section>
+
+                <h1 class="logo"> <span> Contactanos</span></h1>
+        
+                <div class="contact-wrapper animated bounceInUp">
+                    <div class="contact-form">
+                        <h3>Datos de envio</h3>
+                        <form action="">
+                            <p>
+                                <label>FullName</label>
+                                <input type="text" name="fullname">
+                            </p>
+                            <p>
+                                <label>Email Adress</label>
+                                <input type="email" name="email">
+                                
+                            </p>
+                            <div class="saboresform">
+                                <input type="checkbox" id="vainilla" name="vainilla" required="required">
+                                <label for="vainilla">Vainilla</label>
+                                <br>
+                                <input type="checkbox" id="chocolate" name="chocolate" required="required">
+                                <label for="chocolate">chocolate</label>
+                                <br>
+                                <input type="checkbox" id="helado" name="helado" required="required">
+                                <label for="helado">helado</label>
+                                <br>
+                                <label>¿De qué sabor sería tu helado?</label>
+                                <input type="text" id="heladoSabor" name="heladoSabor">
+                            </div>
+
+                            
+                            <p>
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone">
+                            </p>
+                            <p>
+                             
+                            </p>
+                            <p class="block">
+                               <label>¿Quieres algo extra? </label> 
+                                <textarea name="message" rows="3"></textarea>
+                            </p>
+                            
+                            <p class="block">
+                                <button>
+                                    Enviar
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Pasteleria "El Jefe"</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Laureles 89, Geo Plazas, Queretaro, C.p 76116, Queretaro</li>
+                            <li><i class="fas fa-phone"></i> (+52) 442 6554 456</li>
+                            <li><i class="fas fa-envelope-open-text"></i> contact@Pasteleriaeljefe.com</li>
+                        </ul>
+                        <p>Al momento de introducir tus datos de entrega y espesificar cómo quieres tu pastel, tendras un plazo de espera de máximo 2 días hábiles para que tu producto sea entregado</p>
+                        <p>Pasteleria "El Jefe"</p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        <section class="contenedor-5"></section>
+        <section class="contenedor-6"></section>
+        <section class="contenedor-7"></section>
+        <section class="contenedor-8"></section>
+        <section class="contenedor-9"></section>
+        <footer class="pie-de-pagina">
+            <div>
+                <div class="grupo-2">
+                    <small>© 2022 <b>Pasteleria "El Jefe"</b> Innovacion - LunchX</small>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
